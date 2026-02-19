@@ -1,0 +1,15 @@
+img_size: ${dataset.img_size}
+patch_size: 8
+in_chans: 3
+embed_dim: 384
+depth: 8
+num_heads: 6
+mlp_ratio: 4.0
+drop: 0.0
+attn_drop: 0.0
+
+mask_ratio: 0.75
+dec_embed_dim: 256
+dec_depth: 4
+dec_heads: 8
+norm_eps: 1e-6

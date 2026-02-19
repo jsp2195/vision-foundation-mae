@@ -1,0 +1,9 @@
+name: stl10
+root: data
+img_size: 64
+num_classes: 10
+batch_size: 128
+num_workers: 4
+pin_memory: true
+pretrain_split: unlabeled
+pretrain_augment: true

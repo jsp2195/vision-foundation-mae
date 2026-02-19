@@ -1,0 +1,9 @@
+task: linear_probe
+epochs: 5
+lr: 1e-3
+weight_decay: 0.0
+warmup_epochs: 0
+log_interval: 20
+save_every: 1
+smoke_test: false
+max_steps: null
