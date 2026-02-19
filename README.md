@@ -1,4 +1,4 @@
-# minimae-vit
+# vision-foundation-mae
 
 Production-minded, config-driven Vision Transformer + Masked Autoencoder pipeline for self-supervised pretraining and downstream transfer.
 
