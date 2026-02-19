@@ -1,0 +1,4 @@
+jsonl: true
+tensorboard: true
+wandb: false
+project: minimae-vit

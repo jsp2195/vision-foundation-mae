@@ -1,0 +1,17 @@
+defaults:
+  - dataset: cifar10
+  - model: vit_tiny
+  - train: mae
+  - logging: default
+  - _self_
+
+seed: 42
+output_root: outputs
+run_name: ${now:%Y%m%d_%H%M%S}
+device: auto
+compile: false
+ddp: false
+amp_dtype: fp16
+pretrained_ckpt: null
+classifier_ckpt: null
+image_dir: null

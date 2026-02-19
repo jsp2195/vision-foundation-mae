@@ -1,0 +1,5 @@
+defaults:
+  - default
+  - override /train: finetune
+  - override /dataset: cifar10
+  - override /model: vit_tiny
