@@ -1,0 +1,9 @@
+task: linear_probe
+epochs: 3
+batch_size: 64
+lr: 1e-3
+weight_decay: 0.0
+warmup_epochs: 0
+log_every: 10
+save_every: 1
+encoder_ckpt: null

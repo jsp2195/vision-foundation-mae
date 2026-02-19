@@ -1,0 +1,5 @@
+name: stl10
+data_root: ./data
+img_size: 64
+num_classes: 10
+use_stl_unlabeled: true

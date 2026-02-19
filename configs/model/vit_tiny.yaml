@@ -1,0 +1,12 @@
+img_size: 64
+patch_size: 8
+in_chans: 3
+embed_dim: 192
+depth: 6
+num_heads: 3
+mlp_ratio: 4.0
+decoder_dim: 128
+decoder_depth: 2
+decoder_heads: 4
+mask_ratio: 0.75
+norm_pix_loss: true

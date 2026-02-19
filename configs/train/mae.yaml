@@ -1,0 +1,9 @@
+task: mae
+epochs: 2
+batch_size: 64
+lr: 1e-3
+weight_decay: 0.05
+warmup_epochs: 1
+log_every: 10
+save_every: 1
+max_steps: null

@@ -1,0 +1,18 @@
+defaults:
+  - dataset: cifar10
+  - model: vit_tiny
+  - train: mae
+  - logging: default
+  - _self_
+
+run_name: ${now:%Y%m%d_%H%M%S}
+output_root: outputs
+seed: 42
+device: auto
+compile: false
+amp_dtype: fp16
+num_workers: 2
+pin_memory: true
+ddp: false
+local_rank: 0
+wandb_project: minimae-vit

@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "minimae-vit"
+version = "0.1.0"
+description = "Minimal MAE ViT foundation-style training pipeline"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "minimae-vit" }]
+dependencies = [
+  "torch>=2.3.0",
+  "torchvision>=0.18.0",
+  "numpy>=1.24.0",
+  "tqdm>=4.66.0",
+  "hydra-core>=1.3.2",
+  "omegaconf>=2.3.0",
+  "tensorboard>=2.15.0",
+  "pillow>=10.0.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0.0", "ruff>=0.6.0", "black>=24.0.0", "wandb>=0.17.0"]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.black]
+line-length = 100
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
