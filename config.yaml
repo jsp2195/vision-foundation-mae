@@ -1,0 +1,40 @@
+seed: 42
+frequencies_hz:
+- 250
+- 375
+- 500
+- 750
+- 1000
+- 1500
+- 2000
+- 3000
+- 4000
+- 6000
+- 8000
+prior_mean_db: 20.0
+psychometric:
+  beta: 0.35
+  prob_clip: 1.0e-06
+gp:
+  sigma_f: 12.0
+  length_scale: 0.55
+  sigma_noise: 2.0
+  jitter: 1.0e-06
+selection:
+  amplitude_window_db: 15.0
+  amplitude_levels: 7
+calibration:
+  relative_scale: 1.0
+  ambient_noise_floor_db: -10.0
+  compensation_json: compensation_curve.json
+simulation:
+  max_trials: 60
+  variance_stop: 6.0
+  response_noise_std: 1.5
+  pattern: high_freq_rolloff
+validation:
+  staircase_start_db: 25.0
+  staircase_step_db: 5.0
+outputs:
+  results_json: outputs/results.json
+  plots_dir: outputs/plots
